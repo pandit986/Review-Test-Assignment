@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- for owl crollers -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="loader">
+      <div></div>
+    </div>
+    <div class="content">
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="menu-icon">
+          <span class="fas fa-bars"></span>
+        </div>
+        <div class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About US</a></li>
+          <li class="plusIcon">
+            <a href="#">Treatments</a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.7em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff;
+                }
+              </style>
+              <path
+                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+              />
+            </svg>
+          </li>
+          <li class="plusIcon">
+            <a href="#">Destinations</a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.7em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff;
+                }
+              </style>
+              <path
+                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+              />
+            </svg>
+          </li>
+          <li><a href="#">Hospitals</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Request A Quote</a></li>
+        </div>
+        <div class="search-icon">
+          <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+          <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+          <button type="submit" class="fas fa-search"></button>
+          <input
+            type="search"
+            class="search-data"
+            placeholder="Search"
+            required
+          />
+        </form>
+      </nav>
+      <!-- Navigation End  -->
+
+      <!-- Hero Section Start -->
+      <div class="hero">
+        <div class="hero-text">
+          <div>
+            Home <span class="fillColor"> > </span> Treatments
+            <span class="fillColor"> > </span> Orthopaedics
+            <span class="fillColor"> > </span> Knee
+            <span class="fillColor"> > </span>
+            Replacements
+          </div>
+          <h1>Your Title Here</h1>
+          <p>Your text goes here. You can add more content as needed.</p>
+          <a href="#" class="hero-button"
+            ><button class="buttons">Learn More</button></a
+          >
+        </div>
+        <div class="hero-image">
+          <img
+            src="./assets/knee-surgery-treatment.jpg"
+            alt="Hero Image"
+            style="width: 80%"
+            loading="lazy"
+          />
+        </div>
+        <!-- Hero Section End -->
+      </div>
+
+      <div class="container">
+        <!-- Second Navigation Start -->
+        <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <!-- Second Navigation End -->
+      </div>
+      <div id="bottom-boder"></div>
+
+      <!-- Second Hero Section -->
+      <div class="container">
+        <div class="containers">
+          <div class="left">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              ultricies purus nec lectus sagittis, id volutpat metus posuere.
+            </p>
+            <p>
+              Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+              consectetur. Suspendisse potenti. Proin euismod ipsum vel lorem
+              viverra, sit amet interdum tortor consectetur. Suspendisse
+              potenti.
+            </p>
+            <p>
+              Phasellus quis nunc bibendum, egestas quam id, efficitur elit.
+              Integer at ex ac quam dapibus tempus. Proin euismod ipsum vel
+              lorem viverra, sit amet interdum tortor consectetur. Suspendisse
+              potenti.
+            </p>
+          </div>
+          <div class="right">
+            <img src="./assets/doctor.jpg" alt="Image" />
+          </div>
+        </div>
+        <div class="bottom-border1"></div>
+      </div>
+      <!-- Second Hero section end -->
+
+      <!-- Third Section -->
+      <div class="container">
+        <div class="container1">
+          <div class="left">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              ultricies purus nec lectus sagittis, id volutpat metus posuere.
+              Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+              consectetur. Suspendisse potenti. Proin euismod ipsum vel lorem
+              viverra, sit amet interdum tortor consectetur. Suspendisse
+              potenti.
+            </p>
+            <p>
+              Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+              consectetur. Suspendisse potenti.
+            </p>
+            <ul class="ul-bullet">
+              <li class="blue-bullet">roin euismod ipsum vel lorem viverra,</li>
+              <li class="blue-bullet">
+                roin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                consectetur.
+              </li>
+              <li class="blue-bullet">roin euismod ipsum</li>
+            </ul>
+
+            <div class="bottom-border1"></div>
+
+            <!-- second Para Section  -->
+            <div class="para">
+              <h1>Heading</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                ultricies purus nec lectus sagittis, id volutpat metus posuere.
+                Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                consectetur. Suspendisse potenti. Proin euismod ipsum vel lorem
+                viverra, sit amet interdum tortor consectetur. Suspendisse
+                potenti.
+              </p>
+              <p>
+                Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                consectetur. Suspendisse potenti.
+              </p>
+              <ul class="ul-bullet">
+                <li class="blue-bullet">
+                  roin euismod ipsum vel lorem viverra,
+                </li>
+                <li class="blue-bullet">
+                  roin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                  consectetur.
+                </li>
+                <li class="blue-bullet">roin euismod ipsum</li>
+              </ul>
+
+              <div class="bottom-border1"></div>
+            </div>
+
+            <!-- third Para Section  -->
+            <div class="para">
+              <h1>Heading</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                ultricies purus nec lectus sagittis, id volutpat metus posuere.
+                Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                consectetur. Suspendisse potenti. Proin euismod ipsum vel lorem
+                viverra, sit amet interdum tortor consectetur. Suspendisse
+                potenti.
+              </p>
+              <p>
+                Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                consectetur. Suspendisse potenti.
+              </p>
+              <ul class="ul-bullet">
+                <li class="blue-bullet">
+                  roin euismod ipsum vel lorem viverra,
+                </li>
+                <li class="blue-bullet">
+                  roin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                  consectetur.
+                </li>
+                <li class="blue-bullet">roin euismod ipsum</li>
+              </ul>
+
+              <div class="bottom-border1"></div>
+            </div>
+
+            <!-- fourth Para Section  -->
+            <div class="para">
+              <h1>Heading</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                ultricies purus nec lectus sagittis, id volutpat metus posuere.
+                Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                consectetur. Suspendisse potenti. Proin euismod ipsum vel lorem
+                viverra, sit amet interdum tortor consectetur. Suspendisse
+                potenti.
+              </p>
+              <p>
+                Proin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                consectetur. Suspendisse potenti.
+              </p>
+              <ul class="ul-bullet">
+                <li class="blue-bullet">
+                  roin euismod ipsum vel lorem viverra,
+                </li>
+                <li class="blue-bullet">
+                  roin euismod ipsum vel lorem viverra, sit amet interdum tortor
+                  consectetur.
+                </li>
+                <li class="blue-bullet">roin euismod ipsum</li>
+              </ul>
+
+              <div class="bottom-border1"></div>
+            </div>
+          </div>
+          <div class="right-form">
+            <div id="form-container">
+              <p>Need Help ?</p>
+              <p>Just Let Us Know we Will Be happy</p>
+              <form class="sub-form">
+                <input type="text" id="fname" placeholder="Your name.." />
+                <input type="text" id="lname" placeholder="Your last name.." />
+                <input
+                  type="text"
+                  id="lname"
+                  placeholder="Describe Your Treatment.."
+                />
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="2"
+                  placeholder="Your last name.."
+                  required
+                ></textarea>
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Faq Section -->
+
+      <div class="container">
+        <div class="faq-content">
+          <div class="faq-header">Frequently Asked Questions</div>
+          <div class="faq-question">
+            <input id="q1" type="checkbox" class="panel" />
+            <div class="plus">+</div>
+            <label for="q1" class="panel-title"
+              >What is the meaning of life?</label
+            >
+            <div class="panel-content">42</div>
+          </div>
+
+          <div class="faq-question">
+            <input id="q2" type="checkbox" class="panel" />
+            <div class="plus">+</div>
+            <label for="q2" class="panel-title"
+              >How much wood would a woodchuck chuck?</label
+            >
+            <div class="panel-content">
+              A woodchuck would chuck all the wood he could chuck, if a
+              woodchuck could chuck wood!
+            </div>
+          </div>
+
+          <div class="faq-question">
+            <input id="q3" type="checkbox" class="panel" />
+            <div class="plus">+</div>
+            <label for="q3" class="panel-title"
+              >What happens if Pinocchio says, "my nose will grow now"?</label
+            >
+            <div class="panel-content">
+              Certain questions are better left &nbsp;
+              <a
+                href="https://en.wikipedia.org/wiki/The_Unanswered_Question"
+                target="_blank"
+                >unanswered</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Owl Croller First  -->
+      <div class="container">
+        <h2>Patients Stories & Videos</h2>
+        <div class="owl-carousel owl-theme" id="owl-container">
+          <div class="patient-card">
+            <p>Underwemt Procedure for retinal detachement</p>
+            <img src="./assets//image1.jpg" alt="Patient 1" loading="lazy" />
+            <div class="patient-details">
+              <img src="./assets/avtar.jpg" alt="Small Round Image 1" />
+              <p class="patient-name">Client Name 1</p>
+            </div>
+          </div>
+          <div class="patient-card">
+            <p>Underwemt Procedure for retinal detachement</p>
+            <img src="./assets//image1.jpg" alt="Patient 2" />
+            <div class="patient-details">
+              <img src="./assets/avtar.jpg" alt="Small Round Image 2" />
+              <p class="patient-name">Patient Name 2</p>
+            </div>
+          </div>
+          <div class="patient-card">
+            <p>Underwemt Procedure for retinal detachement</p>
+            <img src="./assets//image1.jpg" alt="Patient 2" />
+            <div class="patient-details">
+              <img src="./assets/avtar.jpg" alt="Small Round Image 2" />
+              <p class="patient-name">Patient Name 2</p>
+            </div>
+          </div>
+          <div class="patient-card">
+            <p>Underwemt Procedure for retinal detachement</p>
+            <img src="./assets//image1.jpg" alt="Patient 2" />
+            <div class="patient-details">
+              <img src="./assets/avtar.jpg" alt="Small Round Image 2" />
+              <p class="patient-name">Patient Name 2</p>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+      <!-- Second Owl Croller -->
+      <div id="second-owl-croller">
+        <div class="container-owl container">
+          <h4 id="doct">Doctors</h4>
+          <h2>Top Orthopaedic <span style="color: #40b7fb">Doctors</span></h2>
+          <div class="owl-carousel owl-theme" id="carousel2">
+            <div class="content-area">
+              <div class="cont">
+                <img src="/assets/image1.jpg" alt="" />
+                <h2>Dr Faquire Faller</h2>
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="content-area">
+              <div class="cont">
+                <img src="/assets/image1.jpg" alt="" />
+                <h2>Dr Faquire Faller</h2>
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="content-area">
+              <div class="cont">
+                <img src="/assets/image1.jpg" alt="" />
+                <h2>Dr Faquire Faller</h2>
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="content-area">
+              <div class="cont">
+                <img src="/assets/image1.jpg" alt="" />
+                <h2>Dr Faquire Faller</h2>
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="content-area">
+              <div class="cont">
+                <img src="/assets/image1.jpg" alt="" />
+                <h2>Dr Faquire Faller</h2>
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div class="content-area">
+              <div class="cont">
+                <img src="/assets/image1.jpg" alt="" />
+                <h2>Dr Faquire Faller</h2>
+                <p>Lorem, ipsum dolor. Lorem, ipsum. Lorem.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Owl Croller -->
+      <div id="third-owl-croller">
+        <div class="container-owl container">
+          <h4 id="doct">Doctors</h4>
+          <h2 style="color: black">
+            Top Orthopaedic <span style="color: #40b7fb">Doctors</span>
+          </h2>
+          <div class="owl-carousel owl-theme" id="carousel3">
+            <div class="content-area1">
+              <div class="cont1">
+                <img src="/assets/image1.jpg" alt="" />
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <h2>Dr Faquire Faller</h2>
+              </div>
+            </div>
+
+            <div class="content-area1">
+              <div class="cont1">
+                <img src="/assets/image1.jpg" alt="" />
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <h2>Dr Faquire Faller</h2>
+              </div>
+            </div>
+            <div class="content-area1">
+              <div class="cont1">
+                <img src="/assets/image1.jpg" alt="" />
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <h2>Dr Faquire Faller</h2>
+              </div>
+            </div>
+            <div class="content-area1">
+              <div class="cont1">
+                <img src="/assets/image1.jpg" alt="" />
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <h2>Dr Faquire Faller</h2>
+              </div>
+            </div>
+            <div class="content-area1">
+              <div class="cont1">
+                <img src="/assets/image1.jpg" alt="" />
+                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                <h2>Dr Faquire Faller</h2>
+              </div>
+            </div>
+            <div class="content-area1">
+              <div class="content-area1">
+                <div class="cont1">
+                  <img src="/assets/image1.jpg" alt="" />
+                  <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <h2>Dr Faquire Faller</h2>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Get in Touh Section -->
+      <div class="get-touch">
+        <div class="container" id="get-touchs">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+          <div id="get-touchs1">
+            <button class="buttons">Get In Touch</button>
+            <div><span id="phone">+91 898 777 9999 </span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER START -->
+      <div style="background-color: #070617">
+        <div class="container">
+          <div class="footer">
+            <div class="contain">
+              <div class="col">
+                <h1>Company</h1>
+                <ul>
+                  <li>About</li>
+                  <li>Mission</li>
+                  <li>Services</li>
+                  <li>Social</li>
+                  <li>Get in touch</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h1>Products</h1>
+                <ul>
+                  <li>About</li>
+                  <li>Mission</li>
+                  <li>Services</li>
+                  <li>Social</li>
+                  <li>Get in touch</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                  <li>About</li>
+                  <li>Mission</li>
+                  <li>Services</li>
+                  <li>Social</li>
+                  <li>Get in touch</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                  <li>Webmail</li>
+                  <li>Redeem code</li>
+                  <li>WHOIS lookup</li>
+                  <li>Site map</li>
+                  <li>Web templates</li>
+                  <li>Email templates</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h1>Support</h1>
+                <ul>
+                  <li>Contact us</li>
+                  <li>Web chat</li>
+                  <li>Open ticket</li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="bottom-border1"></div>
+        </div>
+
+        <div class="container">
+          <div class="fooot1">
+            <img src="./assets/affia-logo.png" alt="" />
+            <div class="foot2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                exercitationem.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                dicta dolorem iusto nemo ipsam amet incidunt laborum unde illum
+                facere dignissimos ut, in accusantium reiciendis, delectus non
+                excepturi! Maxime, laborum.
+              </p>
+            </div>
+            <div>
+              <p style="color: white">Follows Us On</p>
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+              <div style="color: white">
+                <p>Customer Service</p>
+                <p>+91 9865 555 88 999</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF FOOTER -->
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-icon span");
+      const searchBtn = document.querySelector(".search-icon");
+      const cancelBtn = document.querySelector(".cancel-icon");
+      const items = document.querySelector(".nav-items");
+      const form = document.querySelector("form");
+      menuBtn.onclick = () => {
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      };
+      cancelBtn.onclick = () => {
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "#ff3d00";
+      };
+      searchBtn.onclick = () => {
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      };
+
+      //Owl Croller First
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 2,
+          loop: true,
+          margin: 20,
+          autoplay: false,
+          autoplayTimeout: 3000,
+
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+          },
+        });
+      });
+
+      // Owl ceoller Second
+
+      $("#carousel2").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+        },
+      });
+
+      // Owl ceoller Second
+
+      $("#carousel3").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+        },
+      });
+
+      $(window).on("load", function () {
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+      });
+    </script>
+  </body>
+</html>
