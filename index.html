@@ -5,14 +5,14 @@
     <title>Test Project</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For Adding the Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-
-    <!-- for owl crollers -->
+    <!-- for owl crullers -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -42,10 +42,9 @@
             <a href="#">Treatments</a
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              height="0.7em"
+              height="0.6em"
               viewBox="0 0 448 512"
             >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <style>
                 svg {
                   fill: #ffffff;
@@ -60,10 +59,9 @@
             <a href="#">Destinations</a
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              height="0.7em"
+              height="0.6em"
               viewBox="0 0 448 512"
             >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <style>
                 svg {
                   fill: #ffffff;
@@ -83,7 +81,7 @@
           <span class="fas fa-search"></span>
         </div>
         <div class="cancel-icon">
-          <span class="fas fa-times"></span>
+          <span class="fas fa-times" style="color: white"></span>
         </div>
         <form action="#">
           <button type="submit" class="fas fa-search"></button>
@@ -100,7 +98,7 @@
       <!-- Hero Section Start -->
       <div class="hero">
         <div class="hero-text">
-          <div>
+          <div class="hero-greater">
             Home <span class="fillColor"> > </span> Treatments
             <span class="fillColor"> > </span> Orthopaedics
             <span class="fillColor"> > </span> Knee
@@ -284,7 +282,7 @@
           </div>
           <div class="right-form">
             <div id="form-container">
-              <p>Need Help ?</p>
+              <p id="form-header">Need Help ?</p>
               <p>Just Let Us Know we Will Be happy</p>
               <form class="sub-form">
                 <input type="text" id="fname" placeholder="Your name.." />
@@ -309,7 +307,6 @@
       </div>
 
       <!-- Faq Section -->
-
       <div class="container">
         <div class="faq-content">
           <div class="faq-header">Frequently Asked Questions</div>
@@ -349,46 +346,99 @@
               >
             </div>
           </div>
+          <div class="bottom-border1" id="faq-bottom"></div>
         </div>
       </div>
 
       <!-- Owl Croller First  -->
       <div class="container">
-        <h2>Patients Stories & Videos</h2>
-        <div class="owl-carousel owl-theme" id="owl-container">
-          <div class="patient-card">
-            <p>Underwemt Procedure for retinal detachement</p>
-            <img src="./assets//image1.jpg" alt="Patient 1" loading="lazy" />
-            <div class="patient-details">
-              <img src="./assets/avtar.jpg" alt="Small Round Image 1" />
-              <p class="patient-name">Client Name 1</p>
+        <div class="Owl-croller-first">
+          <h2>Patients Stories & Videos</h2>
+          <div class="owl-carousel owl-theme" id="owl-container">
+            <div class="patient-card">
+              <div class="owl-head">
+                <p>Underwemt Procedure for retinal detachement dhh whvuh</p>
+                <img src="./assets/icon.png" alt="" id="icon" />
+              </div>
+              <img src="./assets//image1.jpg" alt="Patient 1" loading="lazy" />
+              <div class="testimonial-user">
+                <img
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                  alt="user-img"
+                  class="user-img"
+                />
+                <div class="user-info">
+                  <span class="user-name">Username</span>
+                  <div class="user-job-details">
+                    <span class="user-job">Job</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="patient-card">
-            <p>Underwemt Procedure for retinal detachement</p>
-            <img src="./assets//image1.jpg" alt="Patient 2" />
-            <div class="patient-details">
-              <img src="./assets/avtar.jpg" alt="Small Round Image 2" />
-              <p class="patient-name">Patient Name 2</p>
+
+            <div class="patient-card">
+              <div class="owl-head">
+                <p>Underwemt Procedure for retinal detachement dhh whvuh</p>
+                <img src="./assets/icon.png" alt="" id="icon" />
+              </div>
+              <img src="./assets//image1.jpg" alt="Patient 1" loading="lazy" />
+              <div class="testimonial-user">
+                <img
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                  alt="user-img"
+                  class="user-img"
+                />
+                <div class="user-info">
+                  <span class="user-name">Username</span>
+                  <div class="user-job-details">
+                    <span class="user-job">Job</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="patient-card">
-            <p>Underwemt Procedure for retinal detachement</p>
-            <img src="./assets//image1.jpg" alt="Patient 2" />
-            <div class="patient-details">
-              <img src="./assets/avtar.jpg" alt="Small Round Image 2" />
-              <p class="patient-name">Patient Name 2</p>
+
+            <div class="patient-card">
+              <div class="owl-head">
+                <p>Underwemt Procedure for retinal detachement dhh whvuh</p>
+                <img src="./assets/icon.png" alt="" id="icon" />
+              </div>
+              <img src="./assets//image1.jpg" alt="Patient 1" loading="lazy" />
+              <div class="testimonial-user">
+                <img
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                  alt="user-img"
+                  class="user-img"
+                />
+                <div class="user-info">
+                  <span class="user-name">Username</span>
+                  <div class="user-job-details">
+                    <span class="user-job">Job</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="patient-card">
-            <p>Underwemt Procedure for retinal detachement</p>
-            <img src="./assets//image1.jpg" alt="Patient 2" />
-            <div class="patient-details">
-              <img src="./assets/avtar.jpg" alt="Small Round Image 2" />
-              <p class="patient-name">Patient Name 2</p>
+            <div class="patient-card">
+              <div class="owl-head">
+                <p>Underwemt Procedure for retinal detachement dhh whvuh</p>
+                <img src="./assets/icon.png" alt="" id="icon" />
+              </div>
+              <img src="./assets//image1.jpg" alt="Patient 1" loading="lazy" />
+              <div class="testimonial-user">
+                <img
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                  alt="user-img"
+                  class="user-img"
+                />
+                <div class="user-info">
+                  <span class="user-name">Username</span>
+                  <div class="user-job-details">
+                    <span class="user-job">Job</span>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div></div>
           </div>
-          <div></div>
         </div>
       </div>
 
@@ -396,53 +446,69 @@
       <div id="second-owl-croller">
         <div class="container-owl container">
           <h4 id="doct">Doctors</h4>
-          <h2>Top Orthopaedic <span style="color: #40b7fb">Doctors</span></h2>
+          <h2 style="color: black" id="croller-header">
+            Top Orthopaedic <span style="color: #40b7fb">Doctors</span>
+          </h2>
           <div class="owl-carousel owl-theme" id="carousel2">
             <div class="content-area">
               <div class="cont">
                 <img src="/assets/image1.jpg" alt="" />
-                <h2>Dr Faquire Faller</h2>
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <div class="content-text">
+                  <p id="first-text">Dr Faquire Faller</p>
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-area">
+              <div class="cont">
+                <img src="/assets/image1.jpg" alt="" />
+                <div class="content-text">
+                  <p id="first-text">Dr Faquire Faller</p>
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
               </div>
             </div>
             <div class="content-area">
               <div class="cont">
                 <img src="/assets/image1.jpg" alt="" />
-                <h2>Dr Faquire Faller</h2>
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <div class="content-text">
+                  <p id="first-text">Dr Faquire Faller</p>
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
               </div>
             </div>
             <div class="content-area">
               <div class="cont">
                 <img src="/assets/image1.jpg" alt="" />
-                <h2>Dr Faquire Faller</h2>
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <div class="content-text">
+                  <p id="first-text">Dr Faquire Faller</p>
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
               </div>
             </div>
             <div class="content-area">
               <div class="cont">
                 <img src="/assets/image1.jpg" alt="" />
-                <h2>Dr Faquire Faller</h2>
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <div class="content-text">
+                  <p id="first-text">Dr Faquire Faller</p>
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
               </div>
             </div>
             <div class="content-area">
               <div class="cont">
                 <img src="/assets/image1.jpg" alt="" />
-                <h2>Dr Faquire Faller</h2>
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-              </div>
-            </div>
-            <div class="content-area">
-              <div class="cont">
-                <img src="/assets/image1.jpg" alt="" />
-                <h2>Dr Faquire Faller</h2>
-                <p>Lorem, ipsum dolor. Lorem, ipsum. Lorem.</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <div class="content-text">
+                  <p id="first-text">Dr Faquire Faller</p>
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
               </div>
             </div>
             <div></div>
@@ -453,53 +519,63 @@
       <!-- Second Owl Croller -->
       <div id="third-owl-croller">
         <div class="container-owl container">
-          <h4 id="doct">Doctors</h4>
+          <h4 id="doct">Hospitals</h4>
           <h2 style="color: black">
-            Top Orthopaedic <span style="color: #40b7fb">Doctors</span>
+            Recomended <span style="color: #40b7fb">Hospital</span>
           </h2>
           <div class="owl-carousel owl-theme" id="carousel3">
             <div class="content-area1">
               <div class="cont1">
                 <img src="/assets/image1.jpg" alt="" />
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <h2>Dr Faquire Faller</h2>
+                <div class="content-text">
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p id="first-text">Dr Faquire Faller</p>
+                </div>
               </div>
             </div>
 
             <div class="content-area1">
               <div class="cont1">
                 <img src="/assets/image1.jpg" alt="" />
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <h2>Dr Faquire Faller</h2>
+                <div class="content-text">
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p id="first-text">Dr Faquire Faller</p>
+                </div>
               </div>
             </div>
             <div class="content-area1">
               <div class="cont1">
                 <img src="/assets/image1.jpg" alt="" />
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <h2>Dr Faquire Faller</h2>
+                <div class="content-text">
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p id="first-text">Dr Faquire Faller</p>
+                </div>
               </div>
             </div>
             <div class="content-area1">
               <div class="cont1">
                 <img src="/assets/image1.jpg" alt="" />
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <h2>Dr Faquire Faller</h2>
+                <div class="content-text">
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p id="first-text">Dr Faquire Faller</p>
+                </div>
               </div>
             </div>
             <div class="content-area1">
               <div class="cont1">
                 <img src="/assets/image1.jpg" alt="" />
-                <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                <h2>Dr Faquire Faller</h2>
+                <div class="content-text">
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p id="first-text">Dr Faquire Faller</p>
+                </div>
               </div>
             </div>
             <div class="content-area1">
-              <div class="content-area1">
-                <div class="cont1">
-                  <img src="/assets/image1.jpg" alt="" />
-                  <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                  <h2>Dr Faquire Faller</h2>
+              <div class="cont1">
+                <img src="/assets/image1.jpg" alt="" />
+                <div class="content-text">
+                  <p id="second-text">Lorem, ipsum dolor. Lorem, ipsum.</p>
+                  <p id="first-text">Dr Faquire Faller</p>
                 </div>
               </div>
             </div>
@@ -511,8 +587,14 @@
       <!-- Get in Touh Section -->
       <div class="get-touch">
         <div class="container" id="get-touchs">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+          <div class="text">
+            <p id="text1">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <p id="text2">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
           <div id="get-touchs1">
             <button class="buttons">Get In Touch</button>
             <div><span id="phone">+91 898 777 9999 </span></div>
@@ -596,7 +678,7 @@
               </p>
             </div>
             <div>
-              <p style="color: white">Follows Us On</p>
+              <p id="follow-us">Follows Us On</p>
               <div class="social-icons">
                 <a
                   href="https://www.facebook.com"
@@ -627,9 +709,11 @@
                   <i class="fab fa-youtube"></i>
                 </a>
               </div>
-              <div style="color: white">
+              <div id="contact">
                 <p>Customer Service</p>
-                <p>+91 9865 555 88 999</p>
+                <p style="color: #40b7fb; margin-top: -10px">
+                  +91 9865 555 88 999
+                </p>
               </div>
             </div>
           </div>

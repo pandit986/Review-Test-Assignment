@@ -10,7 +10,7 @@ body {
   background: white;
 }
 
-/* Loader css */
+/* CSS Loader */
 
 .content {
   display: none;
@@ -44,7 +44,10 @@ body {
   }
 }
 
+/* CSS For Loader Ends */
+
 /* Navigation css */
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -58,11 +61,10 @@ nav {
   height: 70px;
   padding: 0 100px;
 }
-nav .logo {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -1px;
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
 }
 nav .nav-items {
   display: flex;
@@ -246,7 +248,6 @@ nav .logo.space {
     font-size: 16px;
   }
 }
-
 /* End Navigation css */
 
 /* Add some basic styling for the hero section */
@@ -259,6 +260,10 @@ nav .logo.space {
   background-image: url("bg.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.hero-greater span {
+  margin-top: 5px;
 }
 
 .hero-text {
@@ -297,6 +302,34 @@ nav .logo.space {
 
 /* Make the hero section responsive */
 @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    /* background-image: none; */
+  }
+  .hero-text {
+    padding-left: 0px;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1;
+    width: 100%;
+  }
+  .hero-button {
+    margin-top: 20px;
+  }
+  .hero-image img {
+    margin-bottom: 10px;
+    margin-left: 0px;
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+  }
+}
+
+@media (max-width: 992px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -374,16 +407,15 @@ nav .logo.space {
 
 @media (max-width: 768px) {
   .topnav a:hover {
-    border-bottom: 0px;
+    border-bottom: 1px solid #40b7fb;
   }
 
   .topnav a.active {
-    border-bottom: 0px;
+    border-bottom: 1px solid #40b7fb;
   }
 }
 
 /* Second Hero section */
-
 .containers {
   display: flex;
   flex-wrap: wrap;
@@ -430,13 +462,23 @@ img {
   }
 }
 
+@media (max-width: 992px) {
+  .containers {
+    flex-direction: column;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+}
 .bottom-border1 {
   margin-top: 25px;
   border: 1px dashed #40b7fb;
 }
+/* Second Hero section End */
 
 /*  Third Section */
-
 .container1 {
   display: flex;
   flex-direction: row;
@@ -472,9 +514,19 @@ img {
   box-shadow: 5px 5px 5px 5px lightblue;
 }
 
+#form-header {
+  font-family: initial;
+  color: #0389d7;
+  font-style: italic;
+  font-size: x-large;
+}
+
 .sub-form {
   display: flex;
   flex-direction: column;
+}
+.sub-form ::placeholder {
+  color: black;
 }
 
 #form-container {
@@ -515,6 +567,29 @@ input[type="submit"] {
 }
 
 @media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .container1 .left {
+    width: 100%;
+  }
+  .container .right-form {
+    width: 100%;
+    height: 100%;
+  }
+  .right-form {
+    margin-left: 0px;
+    box-shadow: 5px 5px 5px 5px#40b7fb;
+  }
+
+  #form-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 992px) {
   .container1 {
     flex-direction: column;
     justify-content: space-between;
@@ -616,10 +691,17 @@ input[type="submit"] {
   display: none;
 }
 
+#faq-bottom {
+  margin-top: 70px;
+}
+
 @media (max-width: 768px) {
   .faq-content {
     margin-left: 0px;
     width: 100%;
+  }
+  #faq-bottom {
+    margin-top: 0px;
   }
 }
 
@@ -632,12 +714,16 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
+#icon {
+  max-width: 20%;
+}
+
 .patient-card p {
   margin-top: 10px;
   font-size: larger;
   margin-left: 50px;
   font-weight: bold;
-  color: blue;
+  color: rgb(166, 0, 255);
 }
 
 .patient-card img {
@@ -670,6 +756,48 @@ input[type="submit"] {
 }
 
 /* CSS for the Owl Carousel */
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .user-img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .user-info {
+    margin: 0 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    .user-name {
+      font-weight: 800;
+    }
+
+    .user-job-details {
+      margin: 5px 0 0 0;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      .line {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: #000;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
 .owl-carousel {
   display: flex;
   flex-wrap: nowrap;
@@ -691,9 +819,12 @@ input[type="submit"] {
 
 #owl-container {
   width: 80%;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
+.owl-head {
+  display: flex;
+}
 .patient-card1 {
   display: flex;
   flex-direction: column;
@@ -723,7 +854,7 @@ input[type="submit"] {
     margin-left: -1px;
     font-size: small;
     font-weight: bold;
-    color: blue;
+    color: rgb(172, 112, 255);
   }
 
   .patient-details p {
@@ -745,10 +876,11 @@ input[type="submit"] {
   margin-top: 50px;
   background-color: lightblue;
 }
+
 #carousel2 {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: center;
   margin-bottom: 100px;
 }
@@ -762,6 +894,7 @@ input[type="submit"] {
 
 .content-area {
   padding: 4px;
+  padding-top: 20px;
   background-color: white;
 }
 .cont {
@@ -777,22 +910,36 @@ input[type="submit"] {
   height: auto;
 }
 
-.cont h2 {
+.content-text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-bottom: -5px;
+}
+
+#first-text {
   color: red;
   font-size: large;
   font-style: italic;
+  font-family: inherit;
+  font-weight: bold;
 }
+
+#second-text {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
 #doct {
   color: red;
   font-size: x-large;
   font-style: italic;
   font-weight: 900;
-}
-.cont p {
-  color: black;
-  font-size: small;
-  font-weight: bold;
-  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -804,6 +951,22 @@ input[type="submit"] {
     max-width: 100%;
     margin-left: 75px;
     height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .owl-carousel {
+    flex-direction: column;
+  }
+
+  .cont img {
+    max-width: 100%;
+    margin-left: 75px;
+    height: auto;
+  }
+
+  #croller-header {
+    font-size: 18px;
   }
 }
 
@@ -867,10 +1030,26 @@ input[type="submit"] {
   background-color: #40b7fb;
   padding: 35px;
 }
+#text1 {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+#text2 {
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
 #phone {
   margin-left: 20px;
 }
-
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #get-touchs {
   display: flex;
   flex-direction: column;
@@ -891,20 +1070,41 @@ input[type="submit"] {
   border-left: 2px solid white;
 }
 
-#get-touchs1 h3,
-h2 {
-  color: white;
-}
-
 @media (max-width: 768px) {
   #get-touchs1 div {
-    font-size: small;
+    font-size: x-large;
     color: white;
     font-weight: bold;
-    border-left: 2px solid white;
+    /* border-left: 2px solid white; */
+  }
+  #get-touchs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
   }
   #phone {
     margin-left: 0px;
+  }
+  #get-touchs1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .get-touch {
+    background-color: #40b7fb;
+    padding: 10px;
+  }
+  #text1 {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+  }
+  #text2 {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
   }
 }
 
@@ -1078,6 +1278,17 @@ li::marker {
   margin-right: 10px;
 }
 
+#follow-us {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+#contact p {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
 @media only screen and (max-width: 500px) {
   .fooot1 {
     display: flex;
