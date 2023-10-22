@@ -2,6 +2,10 @@
 
 Live Project Link : https://candid-clafoutis-47a691.netlify.app/
 
+# Video Link
+
+https://www.loom.com/share/25d02a2def854b309e1e5c76153ee086?sid=4e3bad24-33df-4e53-8828-44f4fe7c2a14
+
 # Screenshot Image 
 
 
