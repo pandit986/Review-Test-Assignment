@@ -17,3 +17,5 @@ Live Project Link : https://candid-clafoutis-47a691.netlify.app/
 ![image](https://github.com/pandit986/Review-Test-Assignment/assets/68102753/3309f8ee-a8a5-4805-9533-3684f1658b61)
 
 ![image](https://github.com/pandit986/Review-Test-Assignment/assets/68102753/58dc52d5-9174-4975-a668-6f096d6664b2)
+
+Video Link : https://www.loom.com/share/cd593720ba394ddfbf5206a8ea711ed6?sid=ee912c03-94dd-4a81-a9f9-6e25989ddbfd
